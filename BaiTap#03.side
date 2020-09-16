@@ -1,0 +1,61 @@
+{
+  "id": "73c746f3-6f20-484e-9bd0-b0e128821624",
+  "version": "2.0",
+  "name": "iTMS Tester Advance Automation",
+  "url": "http://automationpractice.com",
+  "tests": [{
+    "id": "a5603f13-d600-4d07-88a2-ce41c20ff665",
+    "name": "Verify",
+    "commands": [{
+      "id": "f06df174-da37-47e5-8a56-92c5e08a035e",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b5f7b4a-f113-41e0-b148-137598807210",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1376x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a81017c-e025-4dcf-8473-d1a8b7637272",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68ec90f9-6296-4f19-9657-62c16346d855",
+      "comment": "",
+      "command": "click",
+      "target": "css=#SubmitLogin > span",
+      "targets": [
+        ["css=#SubmitLogin > span", "css:finder"],
+        ["xpath=//button[@id='SubmitLogin']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "781d035a-5190-4f3a-b9a1-d7a7aaaabc98",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a5603f13-d600-4d07-88a2-ce41c20ff665"]
+  }],
+  "urls": ["http://automationpractice.com/"],
+  "plugins": []
+}
